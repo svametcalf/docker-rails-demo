@@ -1,0 +1,18 @@
+version: '2'
+services:
+  rails:
+    build: .
+    image: svametcalf/docker-rails-demo
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    command: server -b 0.0.0.0
+
+
+  db:
+    #build: db/build
+    #image: svametcalf/docker-compose db
+    image: postgres:9.5
+    ports:
+      - 5434:5432
