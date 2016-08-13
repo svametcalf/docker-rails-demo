@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Post.create(title: 'Hello World', text: "Hello from my dockerized API")
+Post.create(title: "Goodbye World", text: "Goodbye from my dockerized API")
