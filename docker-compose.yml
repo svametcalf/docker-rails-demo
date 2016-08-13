@@ -3,11 +3,14 @@ services:
   rails:
     build: .
     image: svametcalf/docker-rails-demo
+    volumes:
+      - ".:/usr/src/app"
     ports:
       - "3000:3000"
     depends_on:
       - db
     command: server -b 0.0.0.0
+
 
 
   db:
