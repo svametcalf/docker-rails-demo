@@ -1,7 +1,10 @@
 version: '2'
 services:
   rails:
-    build: .
+    build:
+      context: .
+      args:
+        app_user: $USER
     image: svametcalf/docker-rails-demo
     volumes:
       - ".:/usr/src/app"
