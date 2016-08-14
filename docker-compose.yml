@@ -9,7 +9,7 @@ services:
       - "3000:3000"
     depends_on:
       - db
-    command: server -b 0.0.0.0
+    command: docker:startup
 
 
 

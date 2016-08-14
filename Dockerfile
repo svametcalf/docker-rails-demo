@@ -11,6 +11,11 @@ RUN useradd schuyler
 RUN mkdir -p /usr/src/app
 RUN chown schuyler /usr/src/app
 
+
+RUN curl https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh > /usr/local/bin/wait-for-it.sh
+
+RUN chmod a+x /usr/local/bin/wait-for-it.sh
+
 USER schuyler
 WORKDIR /usr/src/app
 
