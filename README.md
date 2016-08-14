@@ -5,8 +5,8 @@ This is a product of this blog post (NEED URL HERE).
 
 ## Prerequisites
 
-- (docker)[https://docs.docker.com/engine/installation/]
-- (docker-compose)[https://docs.docker.com/compose/install/]
+- [docker](https://docs.docker.com/engine/installation/)
+- [docker-compose](https://docs.docker.com/compose/install/)
 
 ## Installation
 
