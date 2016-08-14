@@ -1,24 +1,22 @@
-# README
+# docker-rails-demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a demo of my development environment setup for docker and rails.
+This is a product of this blog post (NEED URL HERE).
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+- (docker)[https://docs.docker.com/engine/installation/]
+- (docker-compose)[https://docs.docker.com/compose/install/]
 
-* System dependencies
+## Installation
 
-* Configuration
+This project is designed to be run without having to install postgres or rails
+dependencies on the host. Therefore, to run:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+``` shell
+git clone https://github.com/svametcalf/docker-rails-demo.git
+cd docker-rails-demo/
+docker-compose build      # build the docker images locally
+docker-compose run rails test     # run tests
+docker-compose up        # create containers and run them
+```
